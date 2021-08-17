@@ -46,7 +46,7 @@ async def answer(bot, query):
                 file_id=file.file_id,
                 caption=file.caption or "",
                 description=f'Size: {get_size(file.file_size)}\nType: {file.file_type}',
-                reply_markup=reply_markup))
+                ))
 
     if results:
         switch_pm_text = f"{emoji.FILE_FOLDER} Results"
